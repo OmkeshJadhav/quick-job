@@ -4,9 +4,7 @@ import React from 'react'
 const LandingPage = () => {
   return (
     <div>
-      LandingPage
-      <ModeToggle/>
-      
+      LandingPage      
     </div>
   )
 }
