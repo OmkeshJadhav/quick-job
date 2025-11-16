@@ -118,3 +118,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+.gradient {
+  background-image: linear-gradient(to bottom right, #6b7280, #e5e7eb, white);
+}
+
+.gradient-title {
+  background-image: linear-gradient(to bottom right, #6b7280, #e5e7eb, white);
+  -webkit-background-clip: text;
+  color: transparent;
+}

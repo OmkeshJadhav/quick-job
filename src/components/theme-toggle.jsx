@@ -10,7 +10,7 @@ import {
 
 import { useTheme } from "@/components/theme-provider"
 
-export function ModeToggle() {
+const ThemeToggle = () => {
     const { setTheme } = useTheme()
 
     return (
@@ -36,3 +36,5 @@ export function ModeToggle() {
         </DropdownMenu>
     )
 }
+
+export default ThemeToggle;
