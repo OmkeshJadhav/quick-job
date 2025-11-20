@@ -16,8 +16,10 @@ const JobListing = () => {
         searchQuery,
     });
 
+    console.log(dataJobs);
+
     useEffect(() => {
-        if (isLoaded) fnJobs();
+        fnJobs();
     }, [isLoaded, location, company_id, searchQuery]);
 
     if (!isLoaded || loadingJobs) {
