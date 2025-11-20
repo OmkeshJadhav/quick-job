@@ -34,6 +34,7 @@ const JobListing = () => {
 
             // Fetch jobs (API call)
             const data = await getJobs(supabaseAccessToken);
+            console.log(data);
 
             setJobs(data || []);
         } catch (err) {

@@ -1,13 +1,13 @@
 import supabaseClient from "@/utils/supabase"
 
-export const getJobs = async (token, {location, company_id, searchQuery}) => {
+export const getJobs = async (token, { location, company_id, searchQuery } = {}) => {
     const supabase = await supabaseClient(token)
 
     let query = supabase.from("jobs").select('*')
 
-    const {data, error } = await query
+    const { data, error } = await query
 
-    if(error){
+    if (error) {
         console.error("Error fetching jobs", error)
         return null;
     }
